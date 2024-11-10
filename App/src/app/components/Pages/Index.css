@@ -1,0 +1,308 @@
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+/* Keyframes for horizontal movement */
+@keyframes move-horizontally {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(200px); /* Adjust the value as needed */
+  }
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-section {
+  padding: 2rem; /* Add padding for better spacing */
+}
+
+
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 2;
+}
+
+.img-fluid {
+  max-width: 90%; /* Limit the image size */
+  height: auto;
+  margin-right: -50px; /* Adjust based on the exact layout */
+}
+
+/* Typography adjustments for a more professional look */
+.display-4 {
+  font-size: 2.5rem; /* Adjust the size for better readability */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333; /* Dark text for contrast */
+}
+
+.lead {
+  color: #555; /* Slightly lighter color for the description */
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  background-color: #0056b3; /* Example primary color */
+  border-color: #0056b3; /* Example border color */
+  padding: 0.75rem 1.5rem; /* Larger button padding */
+  font-size: 1rem; /* Larger font size for the button */
+  border-radius: 0.5rem; /* Rounded corners for the button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-primary:hover {
+  background-color: #004494; /* Darken the button on hover */
+}
+  
+
+/* Generic styles for all coins */
+.coin {
+  position: absolute;
+  background-image: url('/Treasure.png'); /* Update with actual path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: spin 6s linear infinite, float 3s ease-in-out infinite;
+}
+
+.big-coin {
+  position: absolute;
+  top: 5%; /* Adjust as needed to position the coin */
+  left: 34%; /* Center the coin horizontally */
+  transform: translate(-50%, -50%) rotate(0deg); /* Initial position and rotation */
+  width: 150px; /* Size of the big coin */
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: spin 10s linear infinite; /* Apply the spin animation */
+}
+
+.medium-coin {
+  position: absolute;
+  bottom: 10%; /* Position it below the image */
+  left: 40%; /* Start from the middle of the container */
+  transform: translateX(-50%);
+  width: 100px; /* Adjust the size as needed */
+  height: 100px;
+  z-index: 1; /* Below the image (assuming the image has a higher z-index) */
+  animation: move-horizontally 5s ease-in-out infinite alternate;
+}
+
+.small-coin-before {
+  top: 50%;
+  left: 50%;
+  width: 50px; /* Small coin size */
+  height: 50px;
+  z-index: 0;
+}
+.sticky-coin {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  background-image: url('/Treasure.png'); /* Update with actual path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px; /* Set the width of the coin */
+  height: 50px; /* Set the height of the coin */
+  z-index: 10; /* Ensure it's above other elements */
+}
+.small-coin-above {
+  top: 5%;
+  right: 10%;
+  width: 50px; /* Small coin size */
+  height: 50px;
+  z-index: 2; /* Above the panda image */
+}
+
+
+  /* How it works section */
+
+  .how-it-works-section {
+    margin-top: 7%;
+    background-color: #8df8a5;
+  }
+  
+  .step-card {
+    width: 220px; /* or whatever size you desire */
+    height: 220px; /* to make it square, ensure the height and width are the same */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffbc5c;
+  }
+  
+  .card-body h5 {
+    margin-bottom: 0.5rem;
+  }
+  
+  */
+  /* Additional professional styling for the card */
+  .step-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+  }
+  
+  /* Styling for the arrows */
+  .fa-arrow-right {
+    color: #191970; /* Match the arrow color with your design */
+  }
+  
+
+  .under-line {
+  border: 2px solid #76ba5c;
+  width: 21%;
+  margin: 0 auto 15px;
+}
+
+.under-line1 {
+  border: 2px solid #76ba5c;
+  width: 40%;
+  margin: 0 auto 15px;
+}
+/* Footer */
+
+.lucky-panda-footer {
+  /* background-color: #343a40; Dark footer background */
+  color: #f8f9fa; /* Light text color */
+}
+
+.lucky-panda-footer a {
+  color: #f8f9fa; /* Light link color */
+}
+
+.lucky-panda-footer a:hover {
+  color: #ffc107; /* Gold color for hover state */
+}
+
+/* Social icons style */
+.fab {
+  font-size: 1.5rem; /* Larger icons for visibility */
+}
+.social-icon {
+  margin-right: 10px; /* Spacing between icons */
+  font-size: 24px; /* Size of icons */
+  color: #fff; /* Icon color */
+}
+
+.social-icon:hover {
+  color: #ccc; /* Icon hover color */
+}
+
+.navbar {
+  height: 100px; /* Adjust this value to fit your design */
+  align-items: center; /* This will vertically center the logo and nav items */
+}
+
+/* If your logo height exceeds the navbar height, you might need to adjust padding or size */
+.navbar-brand img {
+  max-height: 100%; /* This ensures the logo is contained within the navbar height */
+  padding: 10px 0; /* Adjust padding to fine-tune vertical positioning */
+}
+
+/* Set a background color, and adjust padding and shadow for a sleek look */
+.navbar {
+  /* background-color: #ffffff; A light or white background gives a clean look */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Subtle shadow for depth */
+  padding: 1rem 0; /* Adjust top and bottom padding for vertical spacing */
+}
+
+/* Logo image adjustments */
+.navbar-brand img {
+  height: 60px; /* Adjust logo height for balance */
+  width: auto; /* Maintain aspect ratio */
+  transition: height 0.3s; /* Smooth transition for any height changes */
+}
+
+/* Navigation links styling */
+.navbar-nav .nav-link {
+  color: #333; /* Dark gray for contrast */
+  font-weight: 500; /* Medium font weight for readability */
+  padding: 0.5rem 1rem; /* Spacing around the links */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #0056b3; /* Highlight color on hover or focus */
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  border: none; /* Remove default border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Consistent shadow with navbar */
+  padding: 1rem; /* Spacing inside the dropdown */
+}
+
+.dropdown-item {
+  color: #333; /* Match link color */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions for hover */
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #f8f9fa; /* Light background on hover for dropdown items */
+  color: #0056b3; /* Highlight color */
+}
+
+/* Wallet connect button styling */
+.btn-outline-secondary {
+  color: #333; /* Match link color */
+  border-color: #ced4da; /* Subtle border color */
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s; /* Smooth transitions */
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
+  color: #fff; /* White text on hover */
+  background-color: #0056b3; /* Highlight background color */
+  border-color: #0056b3; /* Matching border color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .navbar {
+    padding: 0.5rem 0; /* Less padding on smaller screens */
+  }
+
+  .navbar-brand img {
+    height: 50px; /* Smaller logo on mobile */
+  }
+}
+
+@media (min-width: 992px) { /* Adjusting for large screens */
+  .navbar .dropdown-menu {
+    left: auto; /* Resetting default positioning */
+    right: 0;   /* Aligning to the right edge of the parent */
+  }
+}
