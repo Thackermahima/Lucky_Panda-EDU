@@ -5,11 +5,14 @@
 ![Screenshot from 2024-02-25 21-37-36](https://github.com/Thackermahima/Lucky-panda/assets/81761152/0eced1b1-6573-4873-b970-e54c10920d96)
 ![Screenshot from 2024-02-25 21-38-06](https://github.com/Thackermahima/Lucky-panda/assets/81761152/28add316-13a2-4141-b13a-3f789b2b1634)
 
-Chainlink VRF:
 
- 1) https://mumbai.polygonscan.com/tx/0x2f461e650a02bca21fca81484cc45a4362694ce6c6416c4a2959fc6c71974a8a
- 2) https://mumbai.polygonscan.com/tx/0xb5d38381ef07a16df792f3fd5a9f285ad3cdaa33f40795ae85064aa05872d928
+## Deployed contract address
 
-Chainlink Automation: 
-1) https://mumbai.polygonscan.com/tx/0x6e61538e0967c156ededb6c8a0e3aa55b2737fc4bc8682f1c1cdff2d3d280292
-2) https://mumbai.polygonscan.com/tx/0x6650f099ec3fa6854fc433c52f733bdf40eb4de948eb7c9d07755f52f75a44a4
+NFT Contract  : https://edu-chain-testnet.blockscout.com/address/0x0981ab287713DaF5756b1c58654f017f57Eb0be4
+
+Marketplace Contract :  https://edu-chain-testnet.blockscout.com/address/0xc5b8ea3842A30D85424eAdAa00c8729ac6892214
+
+
+
+
+
